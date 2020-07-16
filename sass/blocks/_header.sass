@@ -1,1 +1,32 @@
-
+.header
+  background-color: #fff
+  &-top
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding-top: 40px
+    padding-bottom: 40px
+.search
+  display: flex
+  position: relative
+  overflow: hidden // скрываем все, что вываливается из блока 
+  border-radius: 6px
+  height: 40px
+  &_input
+    width: 350px
+    height: 100%
+    padding-left: 23px
+    background-color: #FSFAFE
+    border: none
+    font-size: 12px
+    line-height: 15px
+    color: #333333
+  &_button
+    position: absolute
+    top: 0
+    right: 0
+    width: 65px
+    height: 100% 
+    border: none
+    background-color: $primary // задали цвет в файле _variables.sass
+    
