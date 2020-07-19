@@ -406,6 +406,10 @@ template {
   line-height: 18px;
 }
 
+.logo {
+  width: 177px;
+}
+
 .search {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -461,5 +465,11 @@ template {
   font-size: 14px;
   line-height: 18px;
   color: #333333;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
