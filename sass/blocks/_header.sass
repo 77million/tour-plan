@@ -6,22 +6,26 @@
     justify-content: space-between
     padding-top: 40px
     padding-bottom: 40px
+  &__search
+    margin-right: auto
+    margin-left: 108px
 .search
   display: flex
   position: relative
   overflow: hidden // скрываем все, что вываливается из блока 
   border-radius: 6px
   height: 40px
-  &_input
+  &__input
     width: 350px
     height: 100%
     padding-left: 23px
+    padding-right: 75px // ограничиваем поле ввода, чтобы текст поискового запроса не доходил до кнопки
     background-color: #FSFAFE
     border: none
     font-size: 12px
     line-height: 15px
-    color: #333333
-  &_button
+    color: $text-color
+  &__button
     position: absolute
     top: 0
     right: 0
@@ -29,4 +33,17 @@
     height: 100% 
     border: none
     background-color: $primary // задали цвет в файле _variables.sass
-    
+.user 
+  display: flex
+  align-items: center
+  text-decoration: none
+  &__avatar
+    width: 40px
+    height: 40px
+    border-radius: 50%
+    object-fit: cover // сохраняем пропорции аватарки
+  &__name
+    margin-left: 18px
+    font-size: 14px
+    line-height: 18px
+    color: $text-color
