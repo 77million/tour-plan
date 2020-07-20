@@ -44,6 +44,24 @@
         width: 16px
         height: 1px
         background-color: $text-color
+  .stars
+    flex-basis: auto // звездочки встают в один ряд с Flash Offer и заголовком 
+  .hotel
+    &-name
+      flex-basis: 100% // размер вычисляется от родительского блока
+    &-wrapper
+        justify-content: space-between //Flash Offer и звездочки разезжаются в разные стороны контейнера 
+    &-info
+      &__text
+        width: 100% // Звездочки отодвигаются в правый край до самого края блока
+      &__name
+        margin-top: 10px
+        margin-bottom: 0
+      &__rating
+         display: none
+      &__offer
+         order: -1
+         margin-left: 0   
 @media (max-width: 576px)
   .logo
     width: 99px
