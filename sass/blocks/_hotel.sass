@@ -26,6 +26,9 @@
   &-description
     font-size: 12px
     line-height: 15px
+  &-grid
+    display: flex
+    justify-content: space-between
 .stars
   flex-basis: 100% 
 .offer
@@ -86,3 +89,44 @@
     &--prev
       left: 18px
       background-image: url(../img/arrow-prev.svg)
+.booking
+  background-color: $dark
+  color: $light
+  border-radius: 8px
+  width: 350px
+  min-height: 210px
+  padding: 28px
+  &__info
+    display: flex
+    justify-content: space-between
+  &__price
+    display: flex
+    flex-direction: column
+  &__start
+    height: 14px
+    left: 951px
+    top: 379px
+  &__pricetag
+    font-style: normal
+    font-weight: 800
+    font-size: 24px
+    line-height: 33px
+  &__per-room
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 16px
+  &__room
+    margin-top: 4px
+    
+  &__text
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 8px
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 16px
+  &__description
+    margin-left: 9px
