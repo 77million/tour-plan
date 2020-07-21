@@ -53,12 +53,21 @@
 .slider
   &-button
     position: absolute
-    top: 0
+    top: 50%
+    margin-top: -15px
+    // transform: translateY(-50%) второй способ позицонировать стрелки по вертикали
     z-index: 99
     width: 30px
     height: 30px
-    border: none 
-    background-color: red 
+    border: none  
     cursor: pointer
+    background-repeat: no-repeat
+    background-position: center
+    background-size: 10px
+    background-color: transparent // делаем фон кнопок прозрачным
     &--next
-      right: 0
+      right: 18px
+      background-image: url(../img/arrow-next.svg)
+    &--prev
+      left: 18px
+      background-image: url(../img/arrow-prev.svg)

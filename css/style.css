@@ -598,17 +598,27 @@ template {
 
 .slider-button {
   position: absolute;
-  top: 0;
+  top: 50%;
+  margin-top: -15px;
   z-index: 99;
   width: 30px;
   height: 30px;
   border: none;
-  background-color: red;
   cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 10px;
+  background-color: transparent;
 }
 
 .slider-button--next {
-  right: 0;
+  right: 18px;
+  background-image: url(../img/arrow-next.svg);
+}
+
+.slider-button--prev {
+  left: 18px;
+  background-image: url(../img/arrow-prev.svg);
 }
 
 @media (max-width: 1200px) {
