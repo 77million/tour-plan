@@ -2,11 +2,13 @@
   .container
     max-width: 960px
   .slider
-    width: 600px // картинку убавляем по ширине (она укорачивается по высоте)
+    width: 590px // картинку убавляем по ширине (она укорачивается по высоте)
   .swiper
     &-slide
       &__image
         height: 100% // картинку убавляем по ширине...и делаем ее по высоте контейнера
+        // что не влезает в контейнер - обрезается
+        object-fit: cover // картинка не искажается, а обрезается
 @media (max-width: 992px)
   .container
     max-width: 760px
@@ -27,6 +29,19 @@
   .search
     &__input
       width: 340px
+  .hotel
+    &-grid
+      flex-direction: column
+    &__slider
+      margin-bottom: 30px
+    &-right
+      flex-direction: row
+  .booking
+    width: 340px
+  .slider
+    width: 100%
+  .map
+    width: 340px
 @media (max-width: 768px)
   .container
     max-width: 576px
