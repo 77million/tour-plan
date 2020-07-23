@@ -802,6 +802,12 @@ template {
   .container {
     max-width: 960px;
   }
+  .slider {
+    width: 600px;
+  }
+  .swiper-slide__image {
+    height: 100%;
+  }
 }
 
 @media (max-width: 992px) {
