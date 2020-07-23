@@ -14,7 +14,6 @@
       margin-bottom: 0
     &__description
       margin: 5px 0
-
   &-name
     font-size: 24px
     line-height: 30px
@@ -29,6 +28,7 @@
   &-grid
     display: flex
     justify-content: space-between
+    align-items: flex-start
 .stars
   flex-basis: 100% 
 .offer
@@ -104,9 +104,9 @@
     display: flex
     flex-direction: column
   &__start
-    height: 14px
-    left: 951px
-    top: 379px
+    font-weight: normal
+    font-size: 10px
+    line-height: 14px
   &__pricetag
     font-style: normal
     font-weight: 800
@@ -151,3 +151,14 @@
     line-height: 25px
   &__num
     margin-left: 8px
+  &__button
+    width: 100%
+    min-height: 45px
+    font-weight: 600
+    font-size: 14px
+    line-height: 19px
+    border-radius: 4px
+    background-color: $primary
+    border: none
+    color: $light
+    cursor: pointer

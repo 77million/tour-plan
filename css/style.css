@@ -565,6 +565,9 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .stars {
@@ -680,9 +683,9 @@ template {
 }
 
 .booking__start {
-  height: 14px;
-  left: 951px;
-  top: 379px;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 14px;
 }
 
 .booking__pricetag {
@@ -763,6 +766,19 @@ template {
 
 .booking__num {
   margin-left: 8px;
+}
+
+.booking__button {
+  width: 100%;
+  min-height: 45px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  border-radius: 4px;
+  background-color: #EC1F46;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
 }
 
 @media (max-width: 1200px) {
