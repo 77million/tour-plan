@@ -798,6 +798,7 @@ template {
   background-color: #000000;
   border-radius: 10px;
   overflow: hidden;
+  border: 0;
 }
 
 @media (max-width: 1200px) {
