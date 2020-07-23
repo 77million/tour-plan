@@ -565,9 +565,19 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+}
+
+.hotel-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .stars {
@@ -779,6 +789,13 @@ template {
   border: none;
   color: #ffffff;
   cursor: pointer;
+}
+
+.map {
+  width: 347px;
+  height: 213px;
+  background-color: #000000;
+  border-radius: 2px;
 }
 
 @media (max-width: 1200px) {
