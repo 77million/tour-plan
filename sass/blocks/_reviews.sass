@@ -10,6 +10,7 @@
     margin-bottom: 70px
   &-slider
     &__item
+      position: relative
       display: flex
       flex-direction: column
       align-items: center
@@ -18,6 +19,24 @@
       background-color: #ffffff
       border-radius: 8px
       padding: 0 62px 30px
+      &::before // добавляем кавычки
+        content: ''
+        position: absolute
+        left: 62px
+        top: 13px  
+        width: 70px
+        height: 47px
+        background-image: url(../img/quote-left.svg)
+        background-repeat: no-repeat
+      &::after
+        content: ''
+        position: absolute
+        right: 62px
+        top: 118px  
+        width: 70px
+        height: 47px
+        background-image: url(../img/quote-right.svg)
+        background-repeat: no-repeat
     &__profile
       display: flex
       flex-direction: column
@@ -47,8 +66,10 @@
       display: flex
       align-items: center
     &__text
+      max-width: 530px
       font-style: normal
       font-weight: normal
       font-size: 12px
       line-height: 160%
       text-align: justify
+      margin: auto
