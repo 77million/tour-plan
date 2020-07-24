@@ -1,14 +1,14 @@
 @media (max-width: 1200px)
   .container
     max-width: 960px
-  .slider
-    width: 590px // картинку убавляем по ширине (она укорачивается по высоте)
   .hotel
     &-slide
       &__image
         width: 100%
         height: 100% 
         object-fit: cover // картинка не искажается, а обрезается
+    &__slider
+      width: 590px // картинку убавляем по ширине (она укорачивается по высоте)
 @media (max-width: 992px)
   .container, 
   .newsletter-wrapper
