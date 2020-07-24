@@ -104,6 +104,23 @@
       width: 92%
       flex-direction: column
       align-items: flex-start
+  .reviews
+    &-slider
+      &__item
+        padding: 0 30px 30px
+        &::after, &::before
+          display: none
+      &__button
+        top: 32px // позиционируем стрелки. Они центрируются по вертикали от аватарки
+        &--prev
+          left: 50% // 1. стрелка уходит вправо на 50% от родителя
+          transform: translate(-50%, 0) // 2. возвращаем стрелку на 50% влево от собственной ширины и она становится точно по центру
+          margin-left: -65px // 3. позиционируем стрелку относительно центра
+        &--next
+          right: 50% 
+          transform: translate(50%, 0)
+          margin-right: -65px 
+          
 @media (max-width: 576px)
   .logo
     width: 99px
