@@ -3,7 +3,7 @@
     max-width: 960px
   .slider
     width: 590px // картинку убавляем по ширине (она укорачивается по высоте)
-  .swiper
+  .hotel
     &-slide
       &__image
         width: 100%
@@ -37,10 +37,11 @@
       margin-bottom: 30px
     &-right
       flex-direction: row
+    &-slider
+      width: 100%
   .booking
     width: 340px
-  .slider
-    width: 100%
+
   .map
     width: 340px
   .reviews
@@ -94,6 +95,8 @@
     &-right
       flex-direction: column
       min-height: 450px
+    &-slider
+      height: 350px
   .booking
     width: 100%
   .map
@@ -124,11 +127,11 @@
 @media (max-width: 576px)
   .logo
     width: 99px
-  .slider
-    height: 250px
   .hotel
     &__slider
       margin-bottom: 20px
+    &-slider
+      height: 250px
   .newsletter
     padding: 76px 0 83px 0
     &__title
