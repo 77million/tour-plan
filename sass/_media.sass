@@ -9,6 +9,9 @@
         object-fit: cover // картинка не искажается, а обрезается
     &__slider
       width: 590px // картинку убавляем по ширине (она укорачивается по высоте)
+  .card
+    width: 230px
+    height: 230px
 @media (max-width: 992px)
   .container, 
   .newsletter-wrapper
@@ -42,13 +45,20 @@
       width: 100%
   .booking
     width: 340px
-
   .map
     width: 340px
   .reviews
     &-slider
       &__item
         max-width: 580px
+  .activities
+    &-wrapper
+      flex-wrap: wrap
+    &__card
+      margin-bottom: 20px
+  .card
+    width: 340px
+    height: 230px
 @media (max-width: 768px)
   .container
     max-width: 576px
