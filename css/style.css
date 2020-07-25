@@ -1197,7 +1197,7 @@ template {
   }
   .card {
     width: 340px;
-    height: 230px;
+    height: 250px;
   }
 }
 
@@ -1205,6 +1205,7 @@ template {
   .container {
     max-width: 576px;
     width: 92%;
+    padding: 0;
   }
   .navbar__search, .navbar-menu, .navbar__user {
     display: none;
