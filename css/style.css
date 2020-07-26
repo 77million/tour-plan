@@ -1138,6 +1138,8 @@ template {
   .container,
   .newsletter-wrapper {
     max-width: 760px;
+  }
+  .newsletter-wrapper {
     padding: 0 30px;
   }
   .logo {
