@@ -3,6 +3,31 @@
   color: $light
   padding-top: 108px
   padding-bottom: 46px
+  &-wrapper
+    display: grid
+    grid-template-columns: repeat(4, minmax(250px 1fr))
+    grid-gap: 20px
+    grid-auto-rows: minmax(40px, min-content)
+    align-content: center
+    align-items: start
+  &__logo
+    grid-row: 1 / 4
+  &__categories
+    grid-row: 1 / 4
+  &__social
+    &__links
+      display: flex
+      align-items: center
+      min-width: 83px
+      justify-content: space-between
+    &-network
+      display: flex
+      align-content: start
+
+      grid-row: 2 / 4
+      grid-column: span 2
+  &__contact-details
+    grid-column: span 2
   &__ul
     padding: 0
     margin: 0
@@ -13,6 +38,9 @@
     font-size: 18px
     line-height: 23px
     margin: 0 0 16px 0
+    text-transform: uppercase
+    &--inline
+      margin: 0 43px 0 0
   &__item
     font-style: normal
     font-weight: normal
