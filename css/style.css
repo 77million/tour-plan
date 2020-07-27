@@ -1142,9 +1142,13 @@ template {
 }
 
 .footer__logo {
+  width: 166px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   -ms-grid-row: 1;
-  -ms-grid-row-span: 3;
-  grid-row: 1 / 4;
+  -ms-grid-row-span: 2;
+  grid-row: 1 / 3;
 }
 
 .footer__categories {
