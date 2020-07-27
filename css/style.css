@@ -1119,6 +1119,40 @@ template {
   cursor: pointer;
 }
 
+.footer {
+  background-color: #0A223D;
+  color: #ffffff;
+  padding-top: 108px;
+  padding-bottom: 46px;
+}
+
+.footer__ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.footer__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  margin: 0 0 16px 0;
+}
+
+.footer__item {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160%;
+  color: #BDBDBD;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: inherit;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
