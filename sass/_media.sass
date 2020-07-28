@@ -14,17 +14,7 @@
     height: 230px
   .footer
     &__input
-      flex-basis: 100%
-    &__logo
-      grid-row: 1 / 2
-    &__sosial
-      &-network
-        grid-row: 1 / 2
-        grid-column: span 4
-        align-self: center
-    &__categories
-      grid-row: 2 / 3
-
+      flex-basis: 100% // поля ввода становятся в столбик
 @media (max-width: 992px)
   .container, 
   .newsletter-wrapper
@@ -73,6 +63,34 @@
   .card
     width: 340px
     height: 250px
+  .footer
+    &-wrapper
+      grid-template-columns: repeat(6, 1fr)
+      grid-row-gap: 40px
+    &__input
+      flex-basis: 49% 
+    &__logo
+      grid-row: 1 / 2
+      grid-column: span 2
+    &__social
+      &-network
+        grid-row: 1 / 2
+        grid-column: span 4
+        align-self: center
+    &__categories
+      grid-row: 2 / 3
+      grid-column: span 2
+    &__legal
+      grid-column: span 2
+    &__additional
+      grid-column: span 2
+    &__contact
+      &-details
+        grid-column: span 5
+        grid-row: 3
+      &-form
+        grid-column: span 5
+        grid-row: 4
 @media (max-width: 768px)
   .container
     max-width: 576px
