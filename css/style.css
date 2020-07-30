@@ -1190,6 +1190,7 @@ template {
 
 .footer__contact-details {
   grid-column: span 2;
+  width: 100%;
 }
 
 .footer__contact-form {
@@ -1309,24 +1310,6 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: #E0E0E0;
-}
-
-.footer__bottom-conditions {
-  -ms-grid-row: 6;
-  -ms-grid-row-span: 1;
-  grid-row: 6 / 7;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
-  grid-column: 2 / 4;
-}
-
-.footer__bottom-cards {
-  -ms-grid-row: 5;
-  -ms-grid-row-span: 1;
-  grid-row: 5 / 6;
-  -ms-grid-column: 4;
-  -ms-grid-column-span: 1;
-  grid-column: 4 / 5;
 }
 
 @media (max-width: 1200px) {
@@ -1720,6 +1703,19 @@ template {
   .footer__contact-form {
     max-width: 281px;
     width: 90%;
+    margin: auto;
+  }
+  .footer__button {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .footer__info {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 100%;
+    margin-bottom: 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */
