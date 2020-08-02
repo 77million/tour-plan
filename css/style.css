@@ -1312,6 +1312,16 @@ template {
   color: #E0E0E0;
 }
 
+.modal__overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 143, 223, 0.39);
+  z-index: 100;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
