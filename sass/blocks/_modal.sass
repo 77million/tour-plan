@@ -9,6 +9,10 @@
     z-index: 100
     visibility: hidden // скрываем модальное окно
     opacity: 0 // скрываем модальное окно
+    transition: opacity 0.2s
+    &--visible
+      visibility: visible
+      opacity: 1
   &__dialog
     position: fixed
     top: 50%
@@ -22,6 +26,10 @@
     z-index: 101
     visibility: hidden // скрываем модальное окно
     opacity: 0 // скрываем модальное окно
+    transition: opacity 0.2s
+    &--visible
+      visibility: visible
+      opacity: 1
   &__close
     position: absolute
     right: 18px
