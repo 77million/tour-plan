@@ -28,12 +28,12 @@ try {
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
-    $mail->Host       = 'smtp.link-host.net'; // SMTP сервера вашей почты
-    $mail->Username   = 'code24@cs.ru'; // Логин на почте
-    $mail->Password   = 'code-stream2020'; // Пароль на почте
+    $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
+    $mail->Username   = 'cspost20@gmail.com'; // Логин на почте
+    $mail->Password   = 'stream-2020'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('code24@cs.ru', 'code-stream'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('cspost20@gmail.com', 'Елена Кулакова'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
     $mail->addAddress('elena.kulakova2010@yandex.ru');  
@@ -54,4 +54,5 @@ else {$result = "error";}
 }
 
 // Отображение результата
-header('Location: thankyou.html');
+// header('Location: thankyou.html');
+echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
