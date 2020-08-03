@@ -7,6 +7,7 @@ require 'phpmailer/Exception.php';
 // Переменные, которые отправляет пользователь
 $name = $_POST['name'];
 $phone = $_POST['phone'];
+$email = $_POST['email'];
 $message = $_POST['message'];
 
 // Формирование самого письма
@@ -15,6 +16,7 @@ $body = "
 <h2>Новое обращение</h2>
 <b>Имя:</b> $name<br>
 <b>Телефон</b> $phone<br><br>
+<b>Электронная почта</b> $email<br><br>
 <b>Сообщение:</b><br>$message
 ";
 
@@ -44,7 +46,7 @@ try {
     $mail->Subject = $title;
     $mail->Body = $body;    
 
-// Проверяем отравленность сообщения
+// Проверяем отправленность сообщения
 if ($mail->send()) {$result = "success";} 
 else {$result = "error";}
 
