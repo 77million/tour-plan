@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Muli:wght@400;700&family=Nunito:ital,wght@0,700;0,800;1,400&display=swap"
       rel="stylesheet" />
       <link rel="stylesheet" href="css/swiper-bundle.min.css">
+      <link rel="stylesheet" href="css/aos.css">
       <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -16,7 +17,7 @@
       <div class="container">
 
         <div class="navbar-top">
-          <a href="#" class="logo">
+          <a href="#" class="logo" data-aos="flip-up" data-aos-delay="900" data-aos-duration="1000">
             <img 
               src="img/horizontal-logo.svg" 
               alt="Logo: Best Tour Plan" 
@@ -141,7 +142,7 @@
                 <img src="img/star.svg" alt="star">
                 <img src="img/star.svg" alt="star">
               </div>
-              <h1 class="hotel-name hotel-info__name">Grand Hilton Hotel</h1>
+              <h1 class="hotel-name hotel-info__name" >Grand Hilton Hotel</h1>
               <span class="offer hotel-info__offer">Flash Offer</span>
             </div>
             <p class="hotel-description hotel-info__description">
@@ -285,7 +286,7 @@
       <div class="container">
         <h2 class="reviews__title">What people thinks about us</h2>
         <!-- Slider main container -->
-        <div class="swiper-container reviews-slider">
+        <div class="swiper-container reviews-slider" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
           <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="reviews-slider__item">
@@ -411,13 +412,13 @@
         <h2 class="activities__title">Other Activities</h2>
         <div class="activities-wrapper">
           
-          <div class="card activities__card">
+          <div class="card activities__card" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
             <img src="img/activity-1.png" alt="The curious corner of chamarel" class="card__image">
             <h3 class="card__title">The curious corner of chamarel</h3>
             <button class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div class="card activities__card" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
             <img src="img/activity-2.png" alt="Gymkhana club golf
             course" class="card__image">
             <h3 class="card__title">Gymkhana club golf
@@ -425,7 +426,7 @@
             <button class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div class="card activities__card" data-aos="fade-up" data-aos-delay="900" data-aos-duration="1000">
             <img src="img/activity-3.png" alt="Tamarind falls hiking
             trip - full day" class="card__image">
             <h3 class="card__title">Tamarind falls hiking
@@ -433,7 +434,7 @@
             <button class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div class="card activities__card" data-aos="fade-up" data-aos-delay="1200" data-aos-duration="1000">
             <img src="img/activity-4.png" alt="The blue marine discovery
             quest" class="card__image">
             <h3 class="card__title">The blue marine discovery
@@ -593,7 +594,7 @@
             </ul>
           </div>
           <!-- /.footer_contact-detales -->
-          <div class="footer__contact-form">
+          <div class="footer__contact-form" data-aos="flip-up" data-aos-delay="500" data-aos-duration="1700">
             <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
             <form action="send.php" method="POST" class="footer__form form">
               <div class="footer__input-group">
@@ -717,6 +718,7 @@
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body> 
 </html>
