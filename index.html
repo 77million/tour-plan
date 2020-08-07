@@ -8,6 +8,7 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Muli:wght@400;700&family=Nunito:ital,wght@0,700;0,800;1,400&display=swap"
       rel="preload" 
+      as="font"
     />
       <link rel="stylesheet" href="css/swiper-bundle.min.css">
       <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
@@ -251,14 +252,13 @@
             </div>
             <!-- /.booking -->
             <div class="map">
-              <iframe 
+              <iframe class="map-iframe"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.041275565113!2d98.2925420494762!3d7.890750807921821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30503b7bfcd9f903%3A0xf7065fac1e3d7c48!2sDoubleTree%20by%20Hilton%20Phuket%20Banthai%20Resort!5e0!3m2!1sru!2sru!4v1595502067697!5m2!1sru!2sru" 
-                width="100%" 
-                height="213" 
                 style="border:0;" 
                 allowfullscreen="" 
                 aria-hidden="false" 
-                tabindex="0"></iframe>
+                tabindex="0">
+              </iframe>
             </div>
             <!-- /.map -->
           </div>
@@ -424,24 +424,21 @@
           <div class="card activities__card" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
             <img src="img/activity-2.jpg" alt="Gymkhana club golf
             course" class="card__image">
-            <h3 class="card__title">Gymkhana club golf
-              course</h3>
+            <h3 class="card__title">Gymkhana club golf course</h3>
             <button class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
           <div class="card activities__card" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">
             <img src="img/activity-3.jpg" alt="Tamarind falls hiking
             trip - full day" class="card__image">
-            <h3 class="card__title">Tamarind falls hiking
-              trip - full day</h3>
+            <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
             <button class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
           <div class="card activities__card" data-aos="fade-up" data-aos-delay="1100" data-aos-duration="1000">
             <img src="img/activity-4.jpg" alt="The blue marine discovery
             quest" class="card__image">
-            <h3 class="card__title">The blue marine discovery
-              quest</h3>
+            <h3 class="card__title">The blue marine discovery quest</h3>
             <button class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
@@ -454,11 +451,12 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
-          <img 
-            src="img/vertical-logo.svg" 
-            alt="Logo: Best Tour Plan" 
-            class="logo footer__logo" 
-          />
+          <a href="#" class="logo footer__logo">
+            <img 
+              src="img/vertical-logo.svg" 
+              alt="Logo: Best Tour Plan" 
+            />
+          </a>
           <div class="footer__list footer__categories">
             <h3 class="footer__title">All Categories</h3>
               <ul class="footer__ul">
@@ -711,7 +709,7 @@
           />
           <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
           <button class="button modal__button" type="submit">Send</button>
-          <span class="modal__info">* Required Fields</span>
+          <span class="modal__info">* Required Fields* Required Fields</span>
         </form>
       </div>
       <!-- /.modal__dialog -->
