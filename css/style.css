@@ -846,6 +846,11 @@ template {
   border: 0;
 }
 
+.map-iframe {
+  width: 100%;
+  height: 213px;
+}
+
 .newsletter {
   position: relative;
   padding: 98px 0 87px 0;
@@ -1276,6 +1281,8 @@ template {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -1289,6 +1296,23 @@ template {
 
 .footer__icon-wrapper {
   min-width: 40px;
+}
+
+.footer__tel {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__tel-number {
+  text-decoration: none;
+  color: #BDBDBD;
+}
+
+.footer__email {
+  text-decoration: none;
+  color: #BDBDBD;
 }
 
 .footer__text {

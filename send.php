@@ -38,7 +38,7 @@ try {
     $mail->setFrom('cspost20@gmail.com', 'Елена Кулакова'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('elena.kulakova2010@yandex.ru');  
+    $mail->addAddress('goncharovnikita713@gmail.com');  
 
 
     // Отправка сообщения
