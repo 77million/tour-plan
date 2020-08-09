@@ -140,6 +140,8 @@
         display: block
     &-menu
       flex-direction: column // меню выстраиваетс по вертикали
+      // height: 80%
+      // overflow-y: scroll
       &__item
         margin-bottom: 20px
         &_mobile
@@ -266,8 +268,17 @@
       grid-column: 1
     &__social
       &-network
+        display: flex
+        flex-wrap: wrap
+        flex-direction: column
         grid-row: 2
         grid-column: 1
+      &-title
+        flex-basis: 100%
+      //   order: 2
+      // &-links
+      //   width: 100%
+      //   order: 1
     &__additional
       grid-row: 3
       grid-column: 1

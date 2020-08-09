@@ -46,6 +46,7 @@ img {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  outline: 0;
 }
 
 .invalid {
@@ -416,6 +417,7 @@ template {
 
 .navbar-top__menu-button {
   display: none;
+  cursor: pointer;
 }
 
 .navbar__search {
@@ -488,6 +490,7 @@ template {
   width: 65px;
   height: 100%;
   border: none;
+  cursor: pointer;
   background-color: #EC1F46;
 }
 
@@ -839,6 +842,7 @@ template {
   border: none;
   color: #ffffff;
   cursor: pointer;
+  outline: 0;
 }
 
 .map {
@@ -1837,10 +1841,23 @@ template {
     grid-column: 1;
   }
   .footer__social-network {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -ms-grid-row: 2;
     grid-row: 2;
     -ms-grid-column: 1;
     grid-column: 1;
+  }
+  .footer__social-title {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
   .footer__additional {
     -ms-grid-row: 3;
