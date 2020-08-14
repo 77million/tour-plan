@@ -64,4 +64,9 @@ $(document).ready(function () {
     });
   });
   AOS.init();
+
+  // Mask for phone number
+  $("#modal__booking-phone").mask("+7 (999) 999-9999");
+  $("#modal__rating-phone").mask("+7 (999) 999-9999");
+  $("#footer__contact-phone").mask("+7 (999) 999-9999");
 });
