@@ -1618,12 +1618,19 @@ template {
   body {
     padding-top: 78px;
   }
+  .navbar__mobile {
+    height: 100%;
+    max-height: 498px;
+    overflow-y: hidden;
+  }
   .navbar__mobile_fixed {
     position: fixed;
     left: 0;
     top: 0;
     right: 0;
     z-index: 99;
+    overflow-y: auto;
+    overflow-x: hidden;
   }
   .navbar__user_mobile_hidden, .navbar__search_mobile_hidden {
     display: none;
@@ -1791,6 +1798,10 @@ template {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
+  .modal {
+    height: 100%;
+    max-height: 498px;
+  }
   .modal__dialog {
     max-width: 381px;
     padding: 30px 60px;
@@ -1798,6 +1809,7 @@ template {
     margin: auto;
     height: 100%;
     overflow-y: auto;
+    overflow-x: hidden;
   }
   .modal__button {
     -webkit-box-ordinal-group: 3;

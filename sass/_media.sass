@@ -113,12 +113,17 @@
     padding-top: 78px
   .navbar
     &__mobile
+      height: 100%
+      max-height: 498px
+      overflow-y: hidden
       &_fixed
         position: fixed
         left: 0
         top: 0
         right: 0
         z-index: 99
+        overflow-y: auto
+        overflow-x: hidden
     &__user, &__search
       &_mobile
         &_hidden
@@ -232,6 +237,8 @@
       &-group
         flex-basis: 100% // поля ввода становятся в столбик
   .modal
+    height: 100%
+    max-height: 498px
     &__dialog
       max-width: 381px
       padding: 30px 60px
@@ -239,6 +246,7 @@
       margin: auto
       height: 100%
       overflow-y: auto
+      overflow-x: hidden
     &__button
       order: 2
       width: 100%
