@@ -1289,8 +1289,6 @@ template {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -1302,13 +1300,17 @@ template {
   margin-bottom: 20px;
 }
 
+.footer__item-tel {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .footer__icon-wrapper {
   min-width: 40px;
 }
 
 .footer__tel {
-  padding-left: 40px;
-  padding-bottom: 3px;
+  padding-bottom: 4px;
 }
 
 .footer__tel-number {
