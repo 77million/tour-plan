@@ -1956,6 +1956,7 @@ template {
     grid-row: 8;
     -ms-grid-column: 1;
     grid-column: 1;
+    margin-bottom: 15px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
